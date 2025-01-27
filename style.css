@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+
+        html{
+            scroll-behavior: smooth;
+        }
+
+        nav.menu-lateral{
+            width: 10vh;
+            height: 100vh;
+            background-color: rgb(10, 10, 10);
+            padding: 40px 0 40px 1%;
+            box-shadow: 3px 0px 0px gold;
+            z-index: 1; /* Fica por cima do conteúdo */
+
+            position: fixed;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+            transition: 0.5s
+        }
+
+        nav.menu-lateral:hover{
+            width: 300px;
+            transition: 0.5s;
+        }
+        
+        ul{
+            height: 100%;
+            list-style-type: none;
+        }
+
+        ul li.item-menu a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+            padding: 20px 4%;
+            display: flex;
+            margin-bottom: 20px;
+            line-height: 40px;
+        }
+
+        ul li.item-menu a .txt-link{
+            margin-left: 40px;
+        }
+        ul li.item-menu a .txt-link:hover{
+            color: gold;
+            text-shadow: 0 0 10px gold;
+            transition: 0.5s;
+        }
+
+        ul li.item-menu a .icon > i{
+            font-size: 30px;
+            margin-left: -25px;
+        }
+
+        ul li.item-menu a .icon > i:hover{
+            color: gold;
+            transition: 0.5s;
+            text-shadow: 0 0 20px gold;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            overflow: hidden;
+            overflow-x: hidden;  /* Evitar overflow horizontal */
+            padding: 0;
+        }
+
+        #intro {
+            background-color: rgb(20, 20, 20);
+            color-interpolation-filters: auto;
+            color: gold;
+            text-align: center;
+            padding: 20% 0;
+        }
+
+        #intro h1 {
+            font-family: 'Major Mono Display', monospace;
+            font-size: 100px;
+            background: linear-gradient(45deg, white, gold, rgb(255, 234, 113), gold);
+            background-size: 400% 100%;
+            animation: brilho 10s ease-in infinite alternate;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 10px gold;
+        }
+        @keyframes brilho {
+            0% {
+                background-position: 0;
+            }
+            100% {
+                background-position: 400%;
+            }
+                
+        }
+
+        #intro h3 {
+            font-family: 'Major Mono Display', monospace;
+            font-size: 30px;
+            background: linear-gradient(45deg, white, gold, rgb(255, 234, 113), gold);
+            background-size: 400% 100%;
+            animation: brilho 10s ease-in infinite alternate;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 10px gold;
+        }
+
+        #intro a {
+            color: white;
+            text-decoration: none;
+            box-sizing: border-box;
+            margin: 0px 10px;
+            padding: 10px 20px;
+            background: transparent;
+            border: 2px solid gold;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #intro a:hover {
+            box-shadow: 0 0 15px gold, inset 0 0 15px gold;
+            text-shadow: 0 0 10px gold;
+            transition: 0.5s;
+        }
+
+        #musicas {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            background-color: rgb(20, 20, 20);
+            color: gold;
+            text-align: center;
+            padding: 1% 0;
+        }
+        #musicas h1 {
+            font-family: 'Major Mono Display', monospace;
+            font-size: 100px;
+            background: linear-gradient(45deg, white, gold, rgb(255, 234, 113), gold);
+            background-size: 400% 100%;
+            animation: brilho 10s ease-in infinite alternate;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 10px gold;
+        }
+        #musicas h2 {
+            font-family: 'Major Mono Display', monospace;
+            font-size: 20px;
+            background: linear-gradient(45deg, white, gold, rgb(255, 234, 113), gold);
+            background-size: 400% 100%;
+            animation: brilho 10s ease-in infinite alternate;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 10px gold;
+        }
+        #musicas h3 {
+            font-family: 'Major Mono Display', monospace;
+            font-size: 15px;
+            background: linear-gradient(45deg, white, gold, rgb(255, 234, 113), gold);
+            background-size: 400% 100%;
+            animation: brilho 10s ease-in infinite alternate;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 10px gold;
+        }
+        #musicas a {
+            color: white;
+        }
+
+        #youtube {
+            color: white;
+            text-decoration: none;
+            box-sizing: border-box;
+            margin: 0px 10px;
+            padding: 10px 20px;
+            background: red;
+            border: 2px solid rgb(255, 0, 0);
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #youtube:hover {
+            box-shadow: 0 0 15px rgb(255, 0, 0), inset 0 0 15px rgb(255, 0, 0);
+            text-shadow: 0 0 10px rgb(255, 0, 0);
+            transition: 0.5s;
+        }
+
+        #spotify {
+            color: white;
+            text-decoration: none;
+            box-sizing: border-box;
+            margin: 0px 10px;
+            padding: 10px 20px;
+            background: rgb(30, 215, 96);
+            border: 2px solid rgb(30, 215, 96);
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #spotify:hover {
+            box-shadow: 0 0 15px rgb(30, 215, 96), inset 0 0 15px rgb(30, 215, 96);
+            text-shadow: 0 0 10px rgb(30, 215, 96);
+            transition: 0.5s;
+        }
+
+        #cover1 {
+            color: white;
+            text-decoration: none;
+            box-sizing: border-box;
+            margin: 0px 10px;
+            padding: 10px 20px;
+            background: transparent;
+            border: 2px solid gold;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #cover1:hover {
+            box-shadow: 0 0 15px gold, inset 0 0 15px gold;
+            text-shadow: 0 0 10px gold;
+            transition: 0.5s;
+        }
+        
+        #cover2 {
+            color: white;
+            text-decoration: none;
+            box-sizing: border-box;
+            margin: 0px 10px;
+            padding: 10px 20px;
+            background: transparent;
+            border: 2px solid gold;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #cover2:hover {
+            box-shadow: 0 0 15px gold, inset 0 0 15px gold;
+            text-shadow: 0 0 10px gold;
+            transition: 0.5s;
+        }
+
+        #imagens {
+            filter: invert(1);
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+
+        #redes {
+            background-color: rgb(20, 20, 20);
+            color: gold;
+            text-align: center;
+            padding: 20% 0;
+        }
+        #redes h1 {
+            font-family: 'Major Mono Display', monospace;
+            font-size: 100px;
+            background: linear-gradient(45deg, white, gold, rgb(255, 234, 113), gold);
+            background-size: 400% 100%;
+            animation: brilho 10s ease-in infinite alternate;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 10px gold;
+        }
+        #redes a {
+            color: white;
+            text-decoration: none;
+            box-sizing: border-box;
+            margin: 0px 10px;
+            padding: 10px 20px;
+            background: transparent;
+            border: 2px solid gold;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #redes a:hover {
+            box-shadow: 0 0 15px gold, inset 0 0 15px gold;
+            text-shadow: 0 0 10px gold;
+            transition: 0.5s;
+        }
+        #contato {
+            background-color: rgb(20, 20, 20);
+            color: gold;
+            text-align: center;
+            padding: 20% 0;
+        }
+        #contato h1 {
+            font-family: 'Major Mono Display', monospace;
+            font-size: 100px;
+            background: linear-gradient(45deg, white, gold, rgb(255, 234, 113), gold);
+            background-size: 400% 100%;
+            animation: brilho 10s ease-in infinite alternate;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 10px gold;
+        }
+        #contato a {
+            color: white;
+            text-decoration: none;
+            box-sizing: border-box;
+            margin: 0px 10px;
+            padding: 10px 20px;
+            background: transparent;
+            border: 2px solid gold;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #contato a:hover {
+            box-shadow: 0 0 15px gold, inset 0 0 15px gold;
+            text-shadow: 0 0 10px gold;
+            transition: 0.5s;
+        }
+        footer {
+            text-align: center;
+            padding: 0 50px;
+        }
+        #guitar-container {
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            transform-origin: center center;  /* Garante que a rotação seja no centro da guitarra */
+        }
+        
+        #guitar {
+            position: absolute;
+            cursor: pointer;
+            width: 300px;  /* Tamanho maior */
+            height: auto;  /* Ajuste automático da altura */
+            transition: transform 0.1s ease-in-out;
+            fill: gold;
+        }     
