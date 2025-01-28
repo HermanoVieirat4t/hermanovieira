@@ -335,3 +335,60 @@
             transition: transform 0.1s ease-in-out;
             fill: gold;
         }     
+/* Layout padrão para telas maiores */
+body {
+    font-size: 18px;
+    padding: 20px;
+}
+
+/* Layout para telas menores (dispositivos móveis) */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .container {
+        flex-direction: column; /* Ajusta layouts horizontais para verticais */
+        padding: 10px;
+    }
+
+    nav a {
+        display: block; /* Links em linha podem virar blocos empilhados */
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .header-title {
+        font-size: 24px; /* Reduza o tamanho do texto principal */
+    }
+
+    img {
+        max-width: 100%; /* Garante que as imagens não ultrapassem o tamanho da tela */
+        height: auto;
+    }
+}
+.container {
+    width: 100%;
+    max-width: 1200px; /* Limita o tamanho máximo */
+    margin: 0 auto;
+    padding: 1em;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+.box {
+    width: 90%;
+    max-width: 300px;
+}
+
+
+
